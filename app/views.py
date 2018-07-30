@@ -5,8 +5,8 @@ from app import app
 def index():
     return "Hello, World Namita!"
 
-@app.route('/')
-@app.route('/hello')
-def index():
+@app.route('/hello', methods=['POST'])
+def hello():
     return "Hello!"
+
 
